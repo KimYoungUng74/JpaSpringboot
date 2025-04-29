@@ -13,7 +13,12 @@ spring:
 #          show_sql: true # Systemout으로 출력
           format_sql: true
 
+    thymeleaf:
+      prefix: classpath:/templates/
+      suffix: .html
+
 logging:
   level:
     org.hibernate.SQL: debug
     org.hibernate.type: trace
+
